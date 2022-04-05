@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Introduction du CSS de Boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- Bosstrap Icon-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="styles.css">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-light" href="index.html">AdminBoard</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item"><a class="nav-link active text-light" href="index.html">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="posts.html">Posts</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="categories.html">Catégories</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="users.html">Utilisateurs</a></li>
+                    </ul>
+                    <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-fill mx-2"></i> Bienvenu Ruchouf
+                            </a>
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+                              <li><a class="dropdown-item text-light" href="profil.html">Profil</a></li>
+                              <li><a class="dropdown-item text-light" href="parametre.html">Paramètres</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item"><a class="nav-link text-light" href="log.html"><i class="bi bi-person-x-fill mx-2"></i>LogOut</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Dashboard-->
+        <section class="bg-primary py-2">
+            <div class="container">
+                <div class="row">
+                    <h1 class="mt-4m"><i class="bi bi-door-open"></i> Connexion</h1>
+                </div>
+            </div>
+        </section>
+
+        <!--Connexion-->
+        <section>
+            <div class="container">
+                <div class="row py-5">
+                    <h2 class="text-center">Connexion</h2>
+                    <div style="display: flex; justify-content: center;">
+                        
+                        <form action="log" class="border border-3 w-50">
+                            <div class="px-5 py-3">
+                                <label class="fw-bold" for="email">E-mail</label> <br>
+                                <input type="email" class="form-control w-90">
+                            </div>
+                            <div class="px-5 py-3">
+                                <label class="fw-bold" for="password">Mot de passe</label> <br>
+                                <input type="password" class="form-control w-90">
+                            </div>
+                            <div class="text-center p-2y">
+                                <button class="btn btn-success m-3"><a href="index.html" style="text-decoration: none; color: white;">Connexion</a></button>
+                            </div>
+                    </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-4 bg-dark text-light text-center">
+            <h3>Copyright © 2019 AdminBoard</h3>
+        </footer>
+
+ 
+        <!--Introduction de JS de Boostrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
